@@ -1,15 +1,17 @@
 {
     "name": "Bond",
+    "short_name": "bond",
     "description": "The decentralised password manager",
-    "version": "1.0",
+    "version": "0.1.0",
     "manifest_version": 3,
-    "background": {
-        "service_worker": "background.js"
-    },
     "permissions": [
         "storage"
     ],
     "action": {
-        "default_popup": "popup.html"
+        "default_popup": "extension/build/index.html",
+        "default_title": "open Bond"
     }
+    // "background": {
+    //     "service_worker": "extension/build/index.html"
+    // }
 }
